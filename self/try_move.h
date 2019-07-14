@@ -1,6 +1,15 @@
-//
-// Created by liyang98 on 2019-07-14.
-//
+/*************************************************************************
+ *
+ * Copyright (c) 2019 liyang. All Rights Reserved
+ *
+ ************************************************************************/
+
+/*
+ * @file try_move2.h
+ * @author gmlyytt@outlook.com
+ * @date 2019-07-14
+ * @brief move返回右值引用的示例
+ * */
 
 #ifndef SELF_TRY_MOVE_H
 #define SELF_TRY_MOVE_H

@@ -3,4 +3,4 @@ project(self)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(self main.cpp try_move.h header.h)
+add_executable(self main.cpp header.h try_move.h)
