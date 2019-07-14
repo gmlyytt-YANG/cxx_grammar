@@ -1,13 +1,8 @@
 #include "header.h"
-#include "try_move.h"
+#include "reference_change_private_variable.h"
 
 int main() {
-    Holder a;
-    Holder b;
-
-    swap(a, b);
-    std::cout << "---------" << std::endl;
-    swap_move(a, b);
+    test_reference_change_private_variable();
 
     return 0;
 }

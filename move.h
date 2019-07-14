@@ -5,20 +5,21 @@
  ************************************************************************/
 
 /*
- * @file try_move2.h
+ * @file move.h
  * @author gmlyytt@outlook.com
  * @date 2019-07-14
  * @brief move返回右值引用的示例
  * */
 
-#ifndef SELF_TRY_MOVE_H
-#define SELF_TRY_MOVE_H
+#ifndef SELF_MOVE_H
+#define SELF_MOVE_H
 
 #include "header.h"
 
 class Resource {
 public:
     Resource() = default;
+
     ~Resource() = default;
 
 };
@@ -72,7 +73,7 @@ void swap(Holder &a, Holder &b) {
     std::cout << " " << std::endl;
 }
 
-void swap_move(Holder& a, Holder& b) {
+void swap_move(Holder &a, Holder &b) {
     Holder h = std::move(a);
     std::cout << " " << std::endl;
     a = std::move(b);
@@ -80,4 +81,14 @@ void swap_move(Holder& a, Holder& b) {
     b = std::move(h);
     std::cout << " " << std::endl;
 }
-#endif //SELF_TRY_MOVE_H
+
+void test_move() {
+    Holder a;
+    Holder b;
+
+    swap(a, b);
+    std::cout << "---------" << std::endl;
+    swap_move(a, b);
+}
+
+#endif //SELF_MOVE_H
