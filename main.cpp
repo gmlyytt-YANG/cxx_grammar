@@ -1,9 +1,7 @@
-#include "header.h"
-#include "reference_change_private_variable.h"
+#include "self_time.h"
 
 int main() {
-    test_reference_change_private_variable();
-
+    std::cout << segment_time() << std::endl;
     return 0;
 }
 
