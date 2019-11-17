@@ -1,7 +1,6 @@
-#include "self_time.h"
+#include "stl/algorithm.h"
 
 int main() {
-    std::cout << segment_time() << std::endl;
+    test_vector_erase();
     return 0;
 }
-

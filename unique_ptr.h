@@ -8,7 +8,7 @@
  * @file unique_ptr.h
  * @author gmlyytt@outlook.com
  * @date 2019-07-28
- * @brief 
+ * @brief unique_ptr的使用
  * */
 #ifndef SELF_UNIQUE_PTR_H
 #define SELF_UNIQUE_PTR_H
